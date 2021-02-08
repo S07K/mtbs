@@ -1,0 +1,175 @@
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav
+{
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: fixed;
+    background: linear-gradient(180deg, #000046, #1CB5E0);
+    z-index: 10;
+}
+#main_nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#dashboard
+{
+    display: flex;
+    padding: 10px;
+}
+#dashboard div
+{
+    padding: 10px;
+    cursor: pointer;
+}
+#brand
+{
+    text-align: left;
+    font-size: 20px;
+}
+#search_box input
+{
+    width: 700px;
+    height: 40px;
+    font-size: 18px;
+    padding: 5px;
+}
+#search_box input:hover
+{
+    box-shadow: 0 0 10px 0 #000000;
+    border:none;
+    border-bottom: 3px;
+}
+#btn input
+{
+    background-color: rgb(0, 179, 0);
+    border: 1px solid #1CB5E0;
+    border-radius: 3px;
+    color: white;
+}
+#btn input:hover
+{
+    background-color: #0f9b0f;
+    box-shadow: 0 0 10px 0 #000000;
+}
+main
+{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(270deg, #000046, #1CB5E0);
+    color: #000046;
+    position: absolute;
+    padding: 0 0 5px 0px;
+    display: grid;
+    grid-template-columns: 25vw auto;
+    grid-row-gap: 10px;
+    grid-template-rows: auto auto 400px;
+}
+.carousel
+{
+    width: 100vw;
+}
+.carousel-caption
+{
+    margin-bottom: 150px;
+}
+
+#carouselExampleCaptions
+{
+    grid-column: 1/3;
+}
+#filters
+{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    border-right: 2px solid #000046;
+}
+#filters button
+{
+    background: #000046;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+#filters_collapse div
+{
+    background: transparent;
+}
+.accordion-header button
+{
+    margin: 10px 0 10px 0; 
+}
+#hub
+{
+    padding-left: 50px;
+}
+#section
+{
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+.card
+{
+    margin: 10px;
+}
+
+#footer
+{
+    grid-column: 1/3;
+    background-color: #000046; 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+#links
+{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+#links a
+{
+    text-decoration: none;
+    color: white;
+}
+#links a:hover
+{
+    text-decoration: underline;
+}
+@media (max-width: 800px)
+{
+    #main_nav
+    {
+        justify-content: space-evenly;
+    }
+    #search_box input
+    {
+        width: auto;
+    }
+    main
+    {
+        padding-top: 100px;
+    }
+    .carousel-caption
+    {
+        margin-bottom: 0px;
+    }
+}
